@@ -1,0 +1,3 @@
+# I did take a look for a template .gitignore file but jesus there was a loft of cruft in there
+bin/
+obj/
