@@ -26,7 +26,7 @@ namespace dotnet
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContextPool<BooksContext>(
-                options => options.UseMySql("Server=localhost;User=root;Password=;Database=books;",
+                options => options.UseMySql("Server=host.docker.internal;User=root;Password=;Database=books;",
                 mysqlOptions =>
                 {
                     mysqlOptions.ServerVersion(new Version(5, 7, 17), ServerType.MySql);
